@@ -15,6 +15,16 @@ SPIDER_MODULES = ['scraper_app.spiders']
 NEWSPIDER_MODULE = 'scraper_app.spiders'
 
 
+DATABASE = {
+    'drivername': 'postgres',
+    'host': 'localhost',
+    'port': '5434',
+    'username': 'nguyenlam',
+    'password': '',
+    'database': 'scrape'
+}
+
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scraper_app (+http://www.yourdomain.com)'
 
