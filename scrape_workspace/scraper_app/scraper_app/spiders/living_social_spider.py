@@ -17,10 +17,15 @@ class LivingSocialSpider(scrapy.Spider):
 
     item_fields = {
         'title': './a/div[@class="cui-content c-bdr-gray-clr"]/div[@class="cui-udc-details"]/div[@class="cui-udc-title c-txt-black two-line-ellipsis"]/text()',
+
         'link': './a/attribute/href',
+
         'location': './/a/div[@class="cui-content c-bdr-gray-clr"]/div[@class="cui-udc-details"]/div[@class="cui-udc-top-row"]/div[@class="cui-udc-left-one"]/div[@class="cui-location cui-truncate c-txt-gray-dk cui-has-distance"]/span/text()',
+
         'original_price': './/a/div[@class="cui-content c-bdr-gray-clr"]/div[@class="cui-udc-details"]/div[@class="cui-udc-bottom-row"]/div[@class="cui-udc-right-two"]/div[@class="cui-price"]/s/text()',
+
         'price': './/a/div[@class="cui-content c-bdr-gray-clr"]/div[@class="cui-udc-details"]/div[@class="cui-udc-bottom-row"]/div[@class="cui-udc-right-two"]/div[@class="cui-price"]/span/text()',
+
         'items_sold': './/a/div[@class="cui-content c-bdr-gray-clr"]/div[@class="cui-udc-details"]/div[@class="cui-udc-bottom-row"]/div[@class="cui-udc-left-two"]/div[@class="cui-quantity-bought c-txt-gray-dk"]/text()'
     }
 
