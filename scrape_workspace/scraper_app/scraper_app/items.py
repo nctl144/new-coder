@@ -7,6 +7,8 @@
 
 import scrapy
 
+from scrapy.item import Item, Field
+
 
 class LivingSocialDeal(scrapy.Item):
     # define the fields for your item here like:
@@ -16,4 +18,4 @@ class LivingSocialDeal(scrapy.Item):
     location = Field()
     original_price = Field()
     price = Field()
-    end_date = Field()
+    items_sold = Field()
